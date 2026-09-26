@@ -127,8 +127,8 @@ winLayout = [[sg.Push(), sg.Text("Minecraft Custom Music Disc Pack Generator", f
              [sg.Text("Pack name"), sg.Input(expand_x=True, key="PackName")],
              [sg.HorizontalSeparator()],
              [sg.Column(discGuiAddition(), key="discList", scrollable=True, vertical_scroll_only=True, size=(None, 500))],
-             [sg.Push(), sg.Button("Add music disc"), sg.VerticalSeparator(), sg.Button("Export"), sg.Button("Import"), sg.Push()],
-             [sg.Push(), sg.Text("If you find any bugs, please report them to [insert github link]"), sg.Push()]
+             [sg.Push(), sg.Button("Add music disc"), sg.VerticalSeparator(), sg.Button("Export"), sg.Button("Import", button_color=("white", "gray")), sg.Push()],
+             [sg.Push(), sg.Text("If you find any bugs, please report them to https://github.com/Cobaz-76/minecraftDiscMaker"), sg.Push()]
              ]
 window = sg.Window('Disc Pack Generator', winLayout, icon="favicon.ico")
 
